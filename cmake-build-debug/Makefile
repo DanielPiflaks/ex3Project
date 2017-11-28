@@ -56,6 +56,52 @@ CMAKE_BINARY_DIR = /home/danielpiflaks/CLionProjects/ex3/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/danielpiflaks/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/danielpiflaks/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/danielpiflaks/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/danielpiflaks/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/danielpiflaks/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/danielpiflaks/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -111,6 +157,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
 # Target rules for targets named ex3
 
 # Build rule for target.
@@ -123,248 +182,465 @@ ex3/fast:
 	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/build
 .PHONY : ex3/fast
 
-Board.o: Board.cpp.o
+#=============================================================================
+# Target rules for targets named gmock_main
 
-.PHONY : Board.o
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
 
-# target to build an object file
-Board.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Board.cpp.o
-.PHONY : Board.cpp.o
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
 
-Board.i: Board.cpp.i
+#=============================================================================
+# Target rules for targets named gmock
 
-.PHONY : Board.i
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
 
-# target to preprocess a source file
-Board.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Board.cpp.i
-.PHONY : Board.cpp.i
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
 
-Board.s: Board.cpp.s
+#=============================================================================
+# Target rules for targets named gtest_main
 
-.PHONY : Board.s
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
 
-# target to generate assembly for a file
-Board.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Board.cpp.s
-.PHONY : Board.cpp.s
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
-BoardCoordinates.o: BoardCoordinates.cpp.o
+#=============================================================================
+# Target rules for targets named gtest
 
-.PHONY : BoardCoordinates.o
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
 
-# target to build an object file
-BoardCoordinates.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/BoardCoordinates.cpp.o
-.PHONY : BoardCoordinates.cpp.o
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
-BoardCoordinates.i: BoardCoordinates.cpp.i
+src/AIPlayer.o: src/AIPlayer.cpp.o
 
-.PHONY : BoardCoordinates.i
-
-# target to preprocess a source file
-BoardCoordinates.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/BoardCoordinates.cpp.i
-.PHONY : BoardCoordinates.cpp.i
-
-BoardCoordinates.s: BoardCoordinates.cpp.s
-
-.PHONY : BoardCoordinates.s
-
-# target to generate assembly for a file
-BoardCoordinates.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/BoardCoordinates.cpp.s
-.PHONY : BoardCoordinates.cpp.s
-
-Game.o: Game.cpp.o
-
-.PHONY : Game.o
+.PHONY : src/AIPlayer.o
 
 # target to build an object file
-Game.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Game.cpp.o
-.PHONY : Game.cpp.o
+src/AIPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/AIPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/AIPlayer.cpp.o
+.PHONY : src/AIPlayer.cpp.o
 
-Game.i: Game.cpp.i
+src/AIPlayer.i: src/AIPlayer.cpp.i
 
-.PHONY : Game.i
+.PHONY : src/AIPlayer.i
 
 # target to preprocess a source file
-Game.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Game.cpp.i
-.PHONY : Game.cpp.i
+src/AIPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/AIPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/AIPlayer.cpp.i
+.PHONY : src/AIPlayer.cpp.i
 
-Game.s: Game.cpp.s
+src/AIPlayer.s: src/AIPlayer.cpp.s
 
-.PHONY : Game.s
+.PHONY : src/AIPlayer.s
 
 # target to generate assembly for a file
-Game.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Game.cpp.s
-.PHONY : Game.cpp.s
+src/AIPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/AIPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/AIPlayer.cpp.s
+.PHONY : src/AIPlayer.cpp.s
 
-GameLogic.o: GameLogic.cpp.o
+src/Board.o: src/Board.cpp.o
 
-.PHONY : GameLogic.o
+.PHONY : src/Board.o
 
 # target to build an object file
-GameLogic.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/GameLogic.cpp.o
-.PHONY : GameLogic.cpp.o
+src/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Board.cpp.o
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/Board.cpp.o
+.PHONY : src/Board.cpp.o
 
-GameLogic.i: GameLogic.cpp.i
+src/Board.i: src/Board.cpp.i
 
-.PHONY : GameLogic.i
+.PHONY : src/Board.i
 
 # target to preprocess a source file
-GameLogic.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/GameLogic.cpp.i
-.PHONY : GameLogic.cpp.i
+src/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Board.cpp.i
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/Board.cpp.i
+.PHONY : src/Board.cpp.i
 
-GameLogic.s: GameLogic.cpp.s
+src/Board.s: src/Board.cpp.s
 
-.PHONY : GameLogic.s
+.PHONY : src/Board.s
 
 # target to generate assembly for a file
-GameLogic.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/GameLogic.cpp.s
-.PHONY : GameLogic.cpp.s
+src/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Board.cpp.s
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/Board.cpp.s
+.PHONY : src/Board.cpp.s
 
-GameParameters.o: GameParameters.cpp.o
+src/BoardCoordinates.o: src/BoardCoordinates.cpp.o
 
-.PHONY : GameParameters.o
+.PHONY : src/BoardCoordinates.o
 
 # target to build an object file
-GameParameters.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/GameParameters.cpp.o
-.PHONY : GameParameters.cpp.o
+src/BoardCoordinates.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/BoardCoordinates.cpp.o
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o
+.PHONY : src/BoardCoordinates.cpp.o
 
-GameParameters.i: GameParameters.cpp.i
+src/BoardCoordinates.i: src/BoardCoordinates.cpp.i
 
-.PHONY : GameParameters.i
+.PHONY : src/BoardCoordinates.i
 
 # target to preprocess a source file
-GameParameters.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/GameParameters.cpp.i
-.PHONY : GameParameters.cpp.i
+src/BoardCoordinates.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/BoardCoordinates.cpp.i
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.i
+.PHONY : src/BoardCoordinates.cpp.i
 
-GameParameters.s: GameParameters.cpp.s
+src/BoardCoordinates.s: src/BoardCoordinates.cpp.s
 
-.PHONY : GameParameters.s
+.PHONY : src/BoardCoordinates.s
 
 # target to generate assembly for a file
-GameParameters.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/GameParameters.cpp.s
-.PHONY : GameParameters.cpp.s
+src/BoardCoordinates.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/BoardCoordinates.cpp.s
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.s
+.PHONY : src/BoardCoordinates.cpp.s
 
-HumanPlayer.o: HumanPlayer.cpp.o
+src/Game.o: src/Game.cpp.o
 
-.PHONY : HumanPlayer.o
+.PHONY : src/Game.o
 
 # target to build an object file
-HumanPlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/HumanPlayer.cpp.o
-.PHONY : HumanPlayer.cpp.o
+src/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Game.cpp.o
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/Game.cpp.o
+.PHONY : src/Game.cpp.o
 
-HumanPlayer.i: HumanPlayer.cpp.i
+src/Game.i: src/Game.cpp.i
 
-.PHONY : HumanPlayer.i
+.PHONY : src/Game.i
 
 # target to preprocess a source file
-HumanPlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/HumanPlayer.cpp.i
-.PHONY : HumanPlayer.cpp.i
+src/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Game.cpp.i
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
 
-HumanPlayer.s: HumanPlayer.cpp.s
+src/Game.s: src/Game.cpp.s
 
-.PHONY : HumanPlayer.s
+.PHONY : src/Game.s
 
 # target to generate assembly for a file
-HumanPlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/HumanPlayer.cpp.s
-.PHONY : HumanPlayer.cpp.s
+src/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Game.cpp.s
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
 
-Player.o: Player.cpp.o
+src/GameLogic.o: src/GameLogic.cpp.o
 
-.PHONY : Player.o
+.PHONY : src/GameLogic.o
 
 # target to build an object file
-Player.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Player.cpp.o
-.PHONY : Player.cpp.o
+src/GameLogic.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/GameLogic.cpp.o
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/GameLogic.cpp.o
+.PHONY : src/GameLogic.cpp.o
 
-Player.i: Player.cpp.i
+src/GameLogic.i: src/GameLogic.cpp.i
 
-.PHONY : Player.i
+.PHONY : src/GameLogic.i
 
 # target to preprocess a source file
-Player.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Player.cpp.i
-.PHONY : Player.cpp.i
+src/GameLogic.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/GameLogic.cpp.i
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/GameLogic.cpp.i
+.PHONY : src/GameLogic.cpp.i
 
-Player.s: Player.cpp.s
+src/GameLogic.s: src/GameLogic.cpp.s
 
-.PHONY : Player.s
+.PHONY : src/GameLogic.s
 
 # target to generate assembly for a file
-Player.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Player.cpp.s
-.PHONY : Player.cpp.s
+src/GameLogic.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/GameLogic.cpp.s
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/GameLogic.cpp.s
+.PHONY : src/GameLogic.cpp.s
 
-StandartGameLogic.o: StandartGameLogic.cpp.o
+src/GameParameters.o: src/GameParameters.cpp.o
 
-.PHONY : StandartGameLogic.o
+.PHONY : src/GameParameters.o
 
 # target to build an object file
-StandartGameLogic.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/StandartGameLogic.cpp.o
-.PHONY : StandartGameLogic.cpp.o
+src/GameParameters.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/GameParameters.cpp.o
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/GameParameters.cpp.o
+.PHONY : src/GameParameters.cpp.o
 
-StandartGameLogic.i: StandartGameLogic.cpp.i
+src/GameParameters.i: src/GameParameters.cpp.i
 
-.PHONY : StandartGameLogic.i
+.PHONY : src/GameParameters.i
 
 # target to preprocess a source file
-StandartGameLogic.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/StandartGameLogic.cpp.i
-.PHONY : StandartGameLogic.cpp.i
+src/GameParameters.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/GameParameters.cpp.i
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/GameParameters.cpp.i
+.PHONY : src/GameParameters.cpp.i
 
-StandartGameLogic.s: StandartGameLogic.cpp.s
+src/GameParameters.s: src/GameParameters.cpp.s
 
-.PHONY : StandartGameLogic.s
+.PHONY : src/GameParameters.s
 
 # target to generate assembly for a file
-StandartGameLogic.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/StandartGameLogic.cpp.s
-.PHONY : StandartGameLogic.cpp.s
+src/GameParameters.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/GameParameters.cpp.s
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/GameParameters.cpp.s
+.PHONY : src/GameParameters.cpp.s
 
-main.o: main.cpp.o
+src/HumanPlayer.o: src/HumanPlayer.cpp.o
 
-.PHONY : main.o
+.PHONY : src/HumanPlayer.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/HumanPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/HumanPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o
+.PHONY : src/HumanPlayer.cpp.o
 
-main.i: main.cpp.i
+src/HumanPlayer.i: src/HumanPlayer.cpp.i
 
-.PHONY : main.i
+.PHONY : src/HumanPlayer.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/HumanPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/HumanPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/HumanPlayer.cpp.i
+.PHONY : src/HumanPlayer.cpp.i
 
-main.s: main.cpp.s
+src/HumanPlayer.s: src/HumanPlayer.cpp.s
 
-.PHONY : main.s
+.PHONY : src/HumanPlayer.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/HumanPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/HumanPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/HumanPlayer.cpp.s
+.PHONY : src/HumanPlayer.cpp.s
+
+src/MiniMaxSimulator.o: src/MiniMaxSimulator.cpp.o
+
+.PHONY : src/MiniMaxSimulator.o
+
+# target to build an object file
+src/MiniMaxSimulator.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/MiniMaxSimulator.cpp.o
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o
+.PHONY : src/MiniMaxSimulator.cpp.o
+
+src/MiniMaxSimulator.i: src/MiniMaxSimulator.cpp.i
+
+.PHONY : src/MiniMaxSimulator.i
+
+# target to preprocess a source file
+src/MiniMaxSimulator.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/MiniMaxSimulator.cpp.i
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.i
+.PHONY : src/MiniMaxSimulator.cpp.i
+
+src/MiniMaxSimulator.s: src/MiniMaxSimulator.cpp.s
+
+.PHONY : src/MiniMaxSimulator.s
+
+# target to generate assembly for a file
+src/MiniMaxSimulator.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/MiniMaxSimulator.cpp.s
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.s
+.PHONY : src/MiniMaxSimulator.cpp.s
+
+src/Player.o: src/Player.cpp.o
+
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Player.cpp.o
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Player.cpp.i
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Player.cpp.s
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
+src/StandartGameLogic.o: src/StandartGameLogic.cpp.o
+
+.PHONY : src/StandartGameLogic.o
+
+# target to build an object file
+src/StandartGameLogic.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/StandartGameLogic.cpp.o
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o
+.PHONY : src/StandartGameLogic.cpp.o
+
+src/StandartGameLogic.i: src/StandartGameLogic.cpp.i
+
+.PHONY : src/StandartGameLogic.i
+
+# target to preprocess a source file
+src/StandartGameLogic.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/StandartGameLogic.cpp.i
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.i
+.PHONY : src/StandartGameLogic.cpp.i
+
+src/StandartGameLogic.s: src/StandartGameLogic.cpp.s
+
+.PHONY : src/StandartGameLogic.s
+
+# target to generate assembly for a file
+src/StandartGameLogic.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/StandartGameLogic.cpp.s
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.s
+.PHONY : src/StandartGameLogic.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+tests/BoardTest.o: tests/BoardTest.cpp.o
+
+.PHONY : tests/BoardTest.o
+
+# target to build an object file
+tests/BoardTest.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/BoardTest.cpp.o
+.PHONY : tests/BoardTest.cpp.o
+
+tests/BoardTest.i: tests/BoardTest.cpp.i
+
+.PHONY : tests/BoardTest.i
+
+# target to preprocess a source file
+tests/BoardTest.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/BoardTest.cpp.i
+.PHONY : tests/BoardTest.cpp.i
+
+tests/BoardTest.s: tests/BoardTest.cpp.s
+
+.PHONY : tests/BoardTest.s
+
+# target to generate assembly for a file
+tests/BoardTest.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/BoardTest.cpp.s
+.PHONY : tests/BoardTest.cpp.s
+
+tests/MiniMaxSimulatorTest.o: tests/MiniMaxSimulatorTest.cpp.o
+
+.PHONY : tests/MiniMaxSimulatorTest.o
+
+# target to build an object file
+tests/MiniMaxSimulatorTest.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/MiniMaxSimulatorTest.cpp.o
+.PHONY : tests/MiniMaxSimulatorTest.cpp.o
+
+tests/MiniMaxSimulatorTest.i: tests/MiniMaxSimulatorTest.cpp.i
+
+.PHONY : tests/MiniMaxSimulatorTest.i
+
+# target to preprocess a source file
+tests/MiniMaxSimulatorTest.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/MiniMaxSimulatorTest.cpp.i
+.PHONY : tests/MiniMaxSimulatorTest.cpp.i
+
+tests/MiniMaxSimulatorTest.s: tests/MiniMaxSimulatorTest.cpp.s
+
+.PHONY : tests/MiniMaxSimulatorTest.s
+
+# target to generate assembly for a file
+tests/MiniMaxSimulatorTest.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/MiniMaxSimulatorTest.cpp.s
+.PHONY : tests/MiniMaxSimulatorTest.cpp.s
+
+tests/gtest_main.o: tests/gtest_main.cpp.o
+
+.PHONY : tests/gtest_main.o
+
+# target to build an object file
+tests/gtest_main.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/gtest_main.cpp.o
+.PHONY : tests/gtest_main.cpp.o
+
+tests/gtest_main.i: tests/gtest_main.cpp.i
+
+.PHONY : tests/gtest_main.i
+
+# target to preprocess a source file
+tests/gtest_main.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/gtest_main.cpp.i
+.PHONY : tests/gtest_main.cpp.i
+
+tests/gtest_main.s: tests/gtest_main.cpp.s
+
+.PHONY : tests/gtest_main.s
+
+# target to generate assembly for a file
+tests/gtest_main.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/gtest_main.cpp.s
+.PHONY : tests/gtest_main.cpp.s
 
 # Help Target
 help:
@@ -372,36 +648,60 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... tests"
 	@echo "... ex3"
-	@echo "... Board.o"
-	@echo "... Board.i"
-	@echo "... Board.s"
-	@echo "... BoardCoordinates.o"
-	@echo "... BoardCoordinates.i"
-	@echo "... BoardCoordinates.s"
-	@echo "... Game.o"
-	@echo "... Game.i"
-	@echo "... Game.s"
-	@echo "... GameLogic.o"
-	@echo "... GameLogic.i"
-	@echo "... GameLogic.s"
-	@echo "... GameParameters.o"
-	@echo "... GameParameters.i"
-	@echo "... GameParameters.s"
-	@echo "... HumanPlayer.o"
-	@echo "... HumanPlayer.i"
-	@echo "... HumanPlayer.s"
-	@echo "... Player.o"
-	@echo "... Player.i"
-	@echo "... Player.s"
-	@echo "... StandartGameLogic.o"
-	@echo "... StandartGameLogic.i"
-	@echo "... StandartGameLogic.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... gmock_main"
+	@echo "... gmock"
+	@echo "... gtest_main"
+	@echo "... gtest"
+	@echo "... src/AIPlayer.o"
+	@echo "... src/AIPlayer.i"
+	@echo "... src/AIPlayer.s"
+	@echo "... src/Board.o"
+	@echo "... src/Board.i"
+	@echo "... src/Board.s"
+	@echo "... src/BoardCoordinates.o"
+	@echo "... src/BoardCoordinates.i"
+	@echo "... src/BoardCoordinates.s"
+	@echo "... src/Game.o"
+	@echo "... src/Game.i"
+	@echo "... src/Game.s"
+	@echo "... src/GameLogic.o"
+	@echo "... src/GameLogic.i"
+	@echo "... src/GameLogic.s"
+	@echo "... src/GameParameters.o"
+	@echo "... src/GameParameters.i"
+	@echo "... src/GameParameters.s"
+	@echo "... src/HumanPlayer.o"
+	@echo "... src/HumanPlayer.i"
+	@echo "... src/HumanPlayer.s"
+	@echo "... src/MiniMaxSimulator.o"
+	@echo "... src/MiniMaxSimulator.i"
+	@echo "... src/MiniMaxSimulator.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
+	@echo "... src/StandartGameLogic.o"
+	@echo "... src/StandartGameLogic.i"
+	@echo "... src/StandartGameLogic.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... tests/BoardTest.o"
+	@echo "... tests/BoardTest.i"
+	@echo "... tests/BoardTest.s"
+	@echo "... tests/MiniMaxSimulatorTest.o"
+	@echo "... tests/MiniMaxSimulatorTest.i"
+	@echo "... tests/MiniMaxSimulatorTest.s"
+	@echo "... tests/gtest_main.o"
+	@echo "... tests/gtest_main.i"
+	@echo "... tests/gtest_main.s"
 .PHONY : help
 
 

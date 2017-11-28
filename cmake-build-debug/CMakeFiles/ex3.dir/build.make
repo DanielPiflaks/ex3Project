@@ -57,249 +57,301 @@ include CMakeFiles/ex3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ex3.dir/flags.make
 
-CMakeFiles/ex3.dir/main.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex3.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/main.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/main.cpp
+CMakeFiles/ex3.dir/src/Board.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/src/Board.cpp.o: ../src/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex3.dir/src/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/src/Board.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/src/Board.cpp
 
-CMakeFiles/ex3.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/main.cpp > CMakeFiles/ex3.dir/main.cpp.i
+CMakeFiles/ex3.dir/src/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/src/Board.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/src/Board.cpp > CMakeFiles/ex3.dir/src/Board.cpp.i
 
-CMakeFiles/ex3.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/main.cpp -o CMakeFiles/ex3.dir/main.cpp.s
+CMakeFiles/ex3.dir/src/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/src/Board.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/src/Board.cpp -o CMakeFiles/ex3.dir/src/Board.cpp.s
 
-CMakeFiles/ex3.dir/main.cpp.o.requires:
+CMakeFiles/ex3.dir/src/Board.cpp.o.requires:
 
-.PHONY : CMakeFiles/ex3.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/ex3.dir/src/Board.cpp.o.requires
 
-CMakeFiles/ex3.dir/main.cpp.o.provides: CMakeFiles/ex3.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/ex3.dir/main.cpp.o.provides
+CMakeFiles/ex3.dir/src/Board.cpp.o.provides: CMakeFiles/ex3.dir/src/Board.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/Board.cpp.o.provides.build
+.PHONY : CMakeFiles/ex3.dir/src/Board.cpp.o.provides
 
-CMakeFiles/ex3.dir/main.cpp.o.provides.build: CMakeFiles/ex3.dir/main.cpp.o
+CMakeFiles/ex3.dir/src/Board.cpp.o.provides.build: CMakeFiles/ex3.dir/src/Board.cpp.o
 
 
-CMakeFiles/ex3.dir/Board.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/Board.cpp.o: ../Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex3.dir/Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Board.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/Board.cpp
+CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o: ../src/HumanPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/src/HumanPlayer.cpp
 
-CMakeFiles/ex3.dir/Board.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/Board.cpp > CMakeFiles/ex3.dir/Board.cpp.i
+CMakeFiles/ex3.dir/src/HumanPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/src/HumanPlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/src/HumanPlayer.cpp > CMakeFiles/ex3.dir/src/HumanPlayer.cpp.i
 
-CMakeFiles/ex3.dir/Board.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/Board.cpp -o CMakeFiles/ex3.dir/Board.cpp.s
+CMakeFiles/ex3.dir/src/HumanPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/src/HumanPlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/src/HumanPlayer.cpp -o CMakeFiles/ex3.dir/src/HumanPlayer.cpp.s
 
-CMakeFiles/ex3.dir/Board.cpp.o.requires:
+CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o.requires:
 
-.PHONY : CMakeFiles/ex3.dir/Board.cpp.o.requires
+.PHONY : CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o.requires
 
-CMakeFiles/ex3.dir/Board.cpp.o.provides: CMakeFiles/ex3.dir/Board.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Board.cpp.o.provides.build
-.PHONY : CMakeFiles/ex3.dir/Board.cpp.o.provides
+CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o.provides: CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o.provides.build
+.PHONY : CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o.provides
 
-CMakeFiles/ex3.dir/Board.cpp.o.provides.build: CMakeFiles/ex3.dir/Board.cpp.o
+CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o.provides.build: CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o
 
 
-CMakeFiles/ex3.dir/HumanPlayer.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/HumanPlayer.cpp.o: ../HumanPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ex3.dir/HumanPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/HumanPlayer.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/HumanPlayer.cpp
+CMakeFiles/ex3.dir/src/Player.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/src/Player.cpp.o: ../src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ex3.dir/src/Player.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/src/Player.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/src/Player.cpp
 
-CMakeFiles/ex3.dir/HumanPlayer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/HumanPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/HumanPlayer.cpp > CMakeFiles/ex3.dir/HumanPlayer.cpp.i
+CMakeFiles/ex3.dir/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/src/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/src/Player.cpp > CMakeFiles/ex3.dir/src/Player.cpp.i
 
-CMakeFiles/ex3.dir/HumanPlayer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/HumanPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/HumanPlayer.cpp -o CMakeFiles/ex3.dir/HumanPlayer.cpp.s
+CMakeFiles/ex3.dir/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/src/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/src/Player.cpp -o CMakeFiles/ex3.dir/src/Player.cpp.s
 
-CMakeFiles/ex3.dir/HumanPlayer.cpp.o.requires:
+CMakeFiles/ex3.dir/src/Player.cpp.o.requires:
 
-.PHONY : CMakeFiles/ex3.dir/HumanPlayer.cpp.o.requires
+.PHONY : CMakeFiles/ex3.dir/src/Player.cpp.o.requires
 
-CMakeFiles/ex3.dir/HumanPlayer.cpp.o.provides: CMakeFiles/ex3.dir/HumanPlayer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/HumanPlayer.cpp.o.provides.build
-.PHONY : CMakeFiles/ex3.dir/HumanPlayer.cpp.o.provides
+CMakeFiles/ex3.dir/src/Player.cpp.o.provides: CMakeFiles/ex3.dir/src/Player.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/Player.cpp.o.provides.build
+.PHONY : CMakeFiles/ex3.dir/src/Player.cpp.o.provides
 
-CMakeFiles/ex3.dir/HumanPlayer.cpp.o.provides.build: CMakeFiles/ex3.dir/HumanPlayer.cpp.o
+CMakeFiles/ex3.dir/src/Player.cpp.o.provides.build: CMakeFiles/ex3.dir/src/Player.cpp.o
 
 
-CMakeFiles/ex3.dir/Player.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/Player.cpp.o: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ex3.dir/Player.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Player.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/Player.cpp
+CMakeFiles/ex3.dir/src/Game.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/src/Game.cpp.o: ../src/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ex3.dir/src/Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/src/Game.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/src/Game.cpp
 
-CMakeFiles/ex3.dir/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/Player.cpp > CMakeFiles/ex3.dir/Player.cpp.i
+CMakeFiles/ex3.dir/src/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/src/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/src/Game.cpp > CMakeFiles/ex3.dir/src/Game.cpp.i
 
-CMakeFiles/ex3.dir/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/Player.cpp -o CMakeFiles/ex3.dir/Player.cpp.s
+CMakeFiles/ex3.dir/src/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/src/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/src/Game.cpp -o CMakeFiles/ex3.dir/src/Game.cpp.s
 
-CMakeFiles/ex3.dir/Player.cpp.o.requires:
+CMakeFiles/ex3.dir/src/Game.cpp.o.requires:
 
-.PHONY : CMakeFiles/ex3.dir/Player.cpp.o.requires
+.PHONY : CMakeFiles/ex3.dir/src/Game.cpp.o.requires
 
-CMakeFiles/ex3.dir/Player.cpp.o.provides: CMakeFiles/ex3.dir/Player.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Player.cpp.o.provides.build
-.PHONY : CMakeFiles/ex3.dir/Player.cpp.o.provides
+CMakeFiles/ex3.dir/src/Game.cpp.o.provides: CMakeFiles/ex3.dir/src/Game.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/Game.cpp.o.provides.build
+.PHONY : CMakeFiles/ex3.dir/src/Game.cpp.o.provides
 
-CMakeFiles/ex3.dir/Player.cpp.o.provides.build: CMakeFiles/ex3.dir/Player.cpp.o
+CMakeFiles/ex3.dir/src/Game.cpp.o.provides.build: CMakeFiles/ex3.dir/src/Game.cpp.o
 
 
-CMakeFiles/ex3.dir/Game.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/Game.cpp.o: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ex3.dir/Game.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Game.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/Game.cpp
+CMakeFiles/ex3.dir/src/GameParameters.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/src/GameParameters.cpp.o: ../src/GameParameters.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ex3.dir/src/GameParameters.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/src/GameParameters.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/src/GameParameters.cpp
 
-CMakeFiles/ex3.dir/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/Game.cpp > CMakeFiles/ex3.dir/Game.cpp.i
+CMakeFiles/ex3.dir/src/GameParameters.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/src/GameParameters.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/src/GameParameters.cpp > CMakeFiles/ex3.dir/src/GameParameters.cpp.i
 
-CMakeFiles/ex3.dir/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/Game.cpp -o CMakeFiles/ex3.dir/Game.cpp.s
+CMakeFiles/ex3.dir/src/GameParameters.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/src/GameParameters.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/src/GameParameters.cpp -o CMakeFiles/ex3.dir/src/GameParameters.cpp.s
 
-CMakeFiles/ex3.dir/Game.cpp.o.requires:
+CMakeFiles/ex3.dir/src/GameParameters.cpp.o.requires:
 
-.PHONY : CMakeFiles/ex3.dir/Game.cpp.o.requires
+.PHONY : CMakeFiles/ex3.dir/src/GameParameters.cpp.o.requires
 
-CMakeFiles/ex3.dir/Game.cpp.o.provides: CMakeFiles/ex3.dir/Game.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Game.cpp.o.provides.build
-.PHONY : CMakeFiles/ex3.dir/Game.cpp.o.provides
+CMakeFiles/ex3.dir/src/GameParameters.cpp.o.provides: CMakeFiles/ex3.dir/src/GameParameters.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/GameParameters.cpp.o.provides.build
+.PHONY : CMakeFiles/ex3.dir/src/GameParameters.cpp.o.provides
 
-CMakeFiles/ex3.dir/Game.cpp.o.provides.build: CMakeFiles/ex3.dir/Game.cpp.o
+CMakeFiles/ex3.dir/src/GameParameters.cpp.o.provides.build: CMakeFiles/ex3.dir/src/GameParameters.cpp.o
 
 
-CMakeFiles/ex3.dir/GameParameters.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/GameParameters.cpp.o: ../GameParameters.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ex3.dir/GameParameters.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/GameParameters.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/GameParameters.cpp
+CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o: ../src/BoardCoordinates.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/src/BoardCoordinates.cpp
 
-CMakeFiles/ex3.dir/GameParameters.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/GameParameters.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/GameParameters.cpp > CMakeFiles/ex3.dir/GameParameters.cpp.i
+CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/src/BoardCoordinates.cpp > CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.i
 
-CMakeFiles/ex3.dir/GameParameters.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/GameParameters.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/GameParameters.cpp -o CMakeFiles/ex3.dir/GameParameters.cpp.s
+CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/src/BoardCoordinates.cpp -o CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.s
 
-CMakeFiles/ex3.dir/GameParameters.cpp.o.requires:
+CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o.requires:
 
-.PHONY : CMakeFiles/ex3.dir/GameParameters.cpp.o.requires
+.PHONY : CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o.requires
 
-CMakeFiles/ex3.dir/GameParameters.cpp.o.provides: CMakeFiles/ex3.dir/GameParameters.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/GameParameters.cpp.o.provides.build
-.PHONY : CMakeFiles/ex3.dir/GameParameters.cpp.o.provides
+CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o.provides: CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o.provides.build
+.PHONY : CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o.provides
 
-CMakeFiles/ex3.dir/GameParameters.cpp.o.provides.build: CMakeFiles/ex3.dir/GameParameters.cpp.o
+CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o.provides.build: CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o
 
 
-CMakeFiles/ex3.dir/BoardCoordinates.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/BoardCoordinates.cpp.o: ../BoardCoordinates.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ex3.dir/BoardCoordinates.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/BoardCoordinates.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/BoardCoordinates.cpp
+CMakeFiles/ex3.dir/src/GameLogic.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/src/GameLogic.cpp.o: ../src/GameLogic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ex3.dir/src/GameLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/src/GameLogic.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/src/GameLogic.cpp
 
-CMakeFiles/ex3.dir/BoardCoordinates.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/BoardCoordinates.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/BoardCoordinates.cpp > CMakeFiles/ex3.dir/BoardCoordinates.cpp.i
+CMakeFiles/ex3.dir/src/GameLogic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/src/GameLogic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/src/GameLogic.cpp > CMakeFiles/ex3.dir/src/GameLogic.cpp.i
 
-CMakeFiles/ex3.dir/BoardCoordinates.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/BoardCoordinates.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/BoardCoordinates.cpp -o CMakeFiles/ex3.dir/BoardCoordinates.cpp.s
+CMakeFiles/ex3.dir/src/GameLogic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/src/GameLogic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/src/GameLogic.cpp -o CMakeFiles/ex3.dir/src/GameLogic.cpp.s
 
-CMakeFiles/ex3.dir/BoardCoordinates.cpp.o.requires:
+CMakeFiles/ex3.dir/src/GameLogic.cpp.o.requires:
 
-.PHONY : CMakeFiles/ex3.dir/BoardCoordinates.cpp.o.requires
+.PHONY : CMakeFiles/ex3.dir/src/GameLogic.cpp.o.requires
 
-CMakeFiles/ex3.dir/BoardCoordinates.cpp.o.provides: CMakeFiles/ex3.dir/BoardCoordinates.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/BoardCoordinates.cpp.o.provides.build
-.PHONY : CMakeFiles/ex3.dir/BoardCoordinates.cpp.o.provides
+CMakeFiles/ex3.dir/src/GameLogic.cpp.o.provides: CMakeFiles/ex3.dir/src/GameLogic.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/GameLogic.cpp.o.provides.build
+.PHONY : CMakeFiles/ex3.dir/src/GameLogic.cpp.o.provides
 
-CMakeFiles/ex3.dir/BoardCoordinates.cpp.o.provides.build: CMakeFiles/ex3.dir/BoardCoordinates.cpp.o
+CMakeFiles/ex3.dir/src/GameLogic.cpp.o.provides.build: CMakeFiles/ex3.dir/src/GameLogic.cpp.o
 
 
-CMakeFiles/ex3.dir/GameLogic.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/GameLogic.cpp.o: ../GameLogic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ex3.dir/GameLogic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/GameLogic.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/GameLogic.cpp
+CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o: ../src/StandartGameLogic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/src/StandartGameLogic.cpp
 
-CMakeFiles/ex3.dir/GameLogic.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/GameLogic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/GameLogic.cpp > CMakeFiles/ex3.dir/GameLogic.cpp.i
+CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/src/StandartGameLogic.cpp > CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.i
 
-CMakeFiles/ex3.dir/GameLogic.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/GameLogic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/GameLogic.cpp -o CMakeFiles/ex3.dir/GameLogic.cpp.s
+CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/src/StandartGameLogic.cpp -o CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.s
 
-CMakeFiles/ex3.dir/GameLogic.cpp.o.requires:
+CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o.requires:
 
-.PHONY : CMakeFiles/ex3.dir/GameLogic.cpp.o.requires
+.PHONY : CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o.requires
 
-CMakeFiles/ex3.dir/GameLogic.cpp.o.provides: CMakeFiles/ex3.dir/GameLogic.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/GameLogic.cpp.o.provides.build
-.PHONY : CMakeFiles/ex3.dir/GameLogic.cpp.o.provides
+CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o.provides: CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o.provides.build
+.PHONY : CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o.provides
 
-CMakeFiles/ex3.dir/GameLogic.cpp.o.provides.build: CMakeFiles/ex3.dir/GameLogic.cpp.o
+CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o.provides.build: CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o
 
 
-CMakeFiles/ex3.dir/StandartGameLogic.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/StandartGameLogic.cpp.o: ../StandartGameLogic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ex3.dir/StandartGameLogic.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/StandartGameLogic.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/StandartGameLogic.cpp
+CMakeFiles/ex3.dir/src/AIPlayer.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/src/AIPlayer.cpp.o: ../src/AIPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ex3.dir/src/AIPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/src/AIPlayer.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/src/AIPlayer.cpp
 
-CMakeFiles/ex3.dir/StandartGameLogic.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/StandartGameLogic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/StandartGameLogic.cpp > CMakeFiles/ex3.dir/StandartGameLogic.cpp.i
+CMakeFiles/ex3.dir/src/AIPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/src/AIPlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/src/AIPlayer.cpp > CMakeFiles/ex3.dir/src/AIPlayer.cpp.i
 
-CMakeFiles/ex3.dir/StandartGameLogic.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/StandartGameLogic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/StandartGameLogic.cpp -o CMakeFiles/ex3.dir/StandartGameLogic.cpp.s
+CMakeFiles/ex3.dir/src/AIPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/src/AIPlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/src/AIPlayer.cpp -o CMakeFiles/ex3.dir/src/AIPlayer.cpp.s
 
-CMakeFiles/ex3.dir/StandartGameLogic.cpp.o.requires:
+CMakeFiles/ex3.dir/src/AIPlayer.cpp.o.requires:
 
-.PHONY : CMakeFiles/ex3.dir/StandartGameLogic.cpp.o.requires
+.PHONY : CMakeFiles/ex3.dir/src/AIPlayer.cpp.o.requires
 
-CMakeFiles/ex3.dir/StandartGameLogic.cpp.o.provides: CMakeFiles/ex3.dir/StandartGameLogic.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/StandartGameLogic.cpp.o.provides.build
-.PHONY : CMakeFiles/ex3.dir/StandartGameLogic.cpp.o.provides
+CMakeFiles/ex3.dir/src/AIPlayer.cpp.o.provides: CMakeFiles/ex3.dir/src/AIPlayer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/AIPlayer.cpp.o.provides.build
+.PHONY : CMakeFiles/ex3.dir/src/AIPlayer.cpp.o.provides
 
-CMakeFiles/ex3.dir/StandartGameLogic.cpp.o.provides.build: CMakeFiles/ex3.dir/StandartGameLogic.cpp.o
+CMakeFiles/ex3.dir/src/AIPlayer.cpp.o.provides.build: CMakeFiles/ex3.dir/src/AIPlayer.cpp.o
+
+
+CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o: ../src/MiniMaxSimulator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/src/MiniMaxSimulator.cpp
+
+CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/src/MiniMaxSimulator.cpp > CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.i
+
+CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/src/MiniMaxSimulator.cpp -o CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.s
+
+CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o.requires:
+
+.PHONY : CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o.requires
+
+CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o.provides: CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o.provides.build
+.PHONY : CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o.provides
+
+CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o.provides.build: CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o
+
+
+CMakeFiles/ex3.dir/src/main.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ex3.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/src/main.cpp.o -c /home/danielpiflaks/CLionProjects/ex3/src/main.cpp
+
+CMakeFiles/ex3.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danielpiflaks/CLionProjects/ex3/src/main.cpp > CMakeFiles/ex3.dir/src/main.cpp.i
+
+CMakeFiles/ex3.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danielpiflaks/CLionProjects/ex3/src/main.cpp -o CMakeFiles/ex3.dir/src/main.cpp.s
+
+CMakeFiles/ex3.dir/src/main.cpp.o.requires:
+
+.PHONY : CMakeFiles/ex3.dir/src/main.cpp.o.requires
+
+CMakeFiles/ex3.dir/src/main.cpp.o.provides: CMakeFiles/ex3.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/ex3.dir/src/main.cpp.o.provides
+
+CMakeFiles/ex3.dir/src/main.cpp.o.provides.build: CMakeFiles/ex3.dir/src/main.cpp.o
 
 
 # Object files for target ex3
 ex3_OBJECTS = \
-"CMakeFiles/ex3.dir/main.cpp.o" \
-"CMakeFiles/ex3.dir/Board.cpp.o" \
-"CMakeFiles/ex3.dir/HumanPlayer.cpp.o" \
-"CMakeFiles/ex3.dir/Player.cpp.o" \
-"CMakeFiles/ex3.dir/Game.cpp.o" \
-"CMakeFiles/ex3.dir/GameParameters.cpp.o" \
-"CMakeFiles/ex3.dir/BoardCoordinates.cpp.o" \
-"CMakeFiles/ex3.dir/GameLogic.cpp.o" \
-"CMakeFiles/ex3.dir/StandartGameLogic.cpp.o"
+"CMakeFiles/ex3.dir/src/Board.cpp.o" \
+"CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o" \
+"CMakeFiles/ex3.dir/src/Player.cpp.o" \
+"CMakeFiles/ex3.dir/src/Game.cpp.o" \
+"CMakeFiles/ex3.dir/src/GameParameters.cpp.o" \
+"CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o" \
+"CMakeFiles/ex3.dir/src/GameLogic.cpp.o" \
+"CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o" \
+"CMakeFiles/ex3.dir/src/AIPlayer.cpp.o" \
+"CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o" \
+"CMakeFiles/ex3.dir/src/main.cpp.o"
 
 # External object files for target ex3
 ex3_EXTERNAL_OBJECTS =
 
-ex3: CMakeFiles/ex3.dir/main.cpp.o
-ex3: CMakeFiles/ex3.dir/Board.cpp.o
-ex3: CMakeFiles/ex3.dir/HumanPlayer.cpp.o
-ex3: CMakeFiles/ex3.dir/Player.cpp.o
-ex3: CMakeFiles/ex3.dir/Game.cpp.o
-ex3: CMakeFiles/ex3.dir/GameParameters.cpp.o
-ex3: CMakeFiles/ex3.dir/BoardCoordinates.cpp.o
-ex3: CMakeFiles/ex3.dir/GameLogic.cpp.o
-ex3: CMakeFiles/ex3.dir/StandartGameLogic.cpp.o
+ex3: CMakeFiles/ex3.dir/src/Board.cpp.o
+ex3: CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o
+ex3: CMakeFiles/ex3.dir/src/Player.cpp.o
+ex3: CMakeFiles/ex3.dir/src/Game.cpp.o
+ex3: CMakeFiles/ex3.dir/src/GameParameters.cpp.o
+ex3: CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o
+ex3: CMakeFiles/ex3.dir/src/GameLogic.cpp.o
+ex3: CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o
+ex3: CMakeFiles/ex3.dir/src/AIPlayer.cpp.o
+ex3: CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o
+ex3: CMakeFiles/ex3.dir/src/main.cpp.o
 ex3: CMakeFiles/ex3.dir/build.make
 ex3: CMakeFiles/ex3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ex3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ex3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ex3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -307,15 +359,17 @@ CMakeFiles/ex3.dir/build: ex3
 
 .PHONY : CMakeFiles/ex3.dir/build
 
-CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/main.cpp.o.requires
-CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/Board.cpp.o.requires
-CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/HumanPlayer.cpp.o.requires
-CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/Player.cpp.o.requires
-CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/Game.cpp.o.requires
-CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/GameParameters.cpp.o.requires
-CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/BoardCoordinates.cpp.o.requires
-CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/GameLogic.cpp.o.requires
-CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/StandartGameLogic.cpp.o.requires
+CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/src/Board.cpp.o.requires
+CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o.requires
+CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/src/Player.cpp.o.requires
+CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/src/Game.cpp.o.requires
+CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/src/GameParameters.cpp.o.requires
+CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o.requires
+CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/src/GameLogic.cpp.o.requires
+CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o.requires
+CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/src/AIPlayer.cpp.o.requires
+CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o.requires
+CMakeFiles/ex3.dir/requires: CMakeFiles/ex3.dir/src/main.cpp.o.requires
 
 .PHONY : CMakeFiles/ex3.dir/requires
 

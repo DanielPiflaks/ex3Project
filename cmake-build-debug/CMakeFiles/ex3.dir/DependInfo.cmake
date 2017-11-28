@@ -4,20 +4,24 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/danielpiflaks/CLionProjects/ex3/Board.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Board.cpp.o"
-  "/home/danielpiflaks/CLionProjects/ex3/BoardCoordinates.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/BoardCoordinates.cpp.o"
-  "/home/danielpiflaks/CLionProjects/ex3/Game.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Game.cpp.o"
-  "/home/danielpiflaks/CLionProjects/ex3/GameLogic.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/GameLogic.cpp.o"
-  "/home/danielpiflaks/CLionProjects/ex3/GameParameters.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/GameParameters.cpp.o"
-  "/home/danielpiflaks/CLionProjects/ex3/HumanPlayer.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/HumanPlayer.cpp.o"
-  "/home/danielpiflaks/CLionProjects/ex3/Player.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Player.cpp.o"
-  "/home/danielpiflaks/CLionProjects/ex3/StandartGameLogic.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/StandartGameLogic.cpp.o"
-  "/home/danielpiflaks/CLionProjects/ex3/main.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/main.cpp.o"
+  "/home/danielpiflaks/CLionProjects/ex3/src/AIPlayer.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/src/AIPlayer.cpp.o"
+  "/home/danielpiflaks/CLionProjects/ex3/src/Board.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/src/Board.cpp.o"
+  "/home/danielpiflaks/CLionProjects/ex3/src/BoardCoordinates.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/src/BoardCoordinates.cpp.o"
+  "/home/danielpiflaks/CLionProjects/ex3/src/Game.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/src/Game.cpp.o"
+  "/home/danielpiflaks/CLionProjects/ex3/src/GameLogic.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/src/GameLogic.cpp.o"
+  "/home/danielpiflaks/CLionProjects/ex3/src/GameParameters.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/src/GameParameters.cpp.o"
+  "/home/danielpiflaks/CLionProjects/ex3/src/HumanPlayer.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o"
+  "/home/danielpiflaks/CLionProjects/ex3/src/MiniMaxSimulator.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/src/MiniMaxSimulator.cpp.o"
+  "/home/danielpiflaks/CLionProjects/ex3/src/Player.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/src/Player.cpp.o"
+  "/home/danielpiflaks/CLionProjects/ex3/src/StandartGameLogic.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/src/StandartGameLogic.cpp.o"
+  "/home/danielpiflaks/CLionProjects/ex3/src/main.cpp" "/home/danielpiflaks/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../lib/googletest-master/googletest/include"
+  "../lib/googletest-master/googlemock/include"
   )
 
 # Targets to which this target links.

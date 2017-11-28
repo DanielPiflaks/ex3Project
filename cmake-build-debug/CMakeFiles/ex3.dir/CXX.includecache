@@ -6,31 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/home/danielpiflaks/CLionProjects/ex3/Board.cpp
-Board.h
-/home/danielpiflaks/CLionProjects/ex3/Board.h
+/home/danielpiflaks/CLionProjects/ex3/src/AIPlayer.cpp
+BoardCoordinates.h
+/home/danielpiflaks/CLionProjects/ex3/src/BoardCoordinates.h
+AIPlayer.h
+/home/danielpiflaks/CLionProjects/ex3/src/AIPlayer.h
 
-/home/danielpiflaks/CLionProjects/ex3/Board.h
+/home/danielpiflaks/CLionProjects/ex3/src/AIPlayer.h
+Player.h
+/home/danielpiflaks/CLionProjects/ex3/src/Player.h
+MiniMaxSimulator.h
+/home/danielpiflaks/CLionProjects/ex3/src/MiniMaxSimulator.h
+
+/home/danielpiflaks/CLionProjects/ex3/src/Board.cpp
+Board.h
+/home/danielpiflaks/CLionProjects/ex3/src/Board.h
+
+/home/danielpiflaks/CLionProjects/ex3/src/Board.h
 iostream
 -
 vector
 -
 BoardCoordinates.h
-/home/danielpiflaks/CLionProjects/ex3/BoardCoordinates.h
+/home/danielpiflaks/CLionProjects/ex3/src/BoardCoordinates.h
 
-/home/danielpiflaks/CLionProjects/ex3/BoardCoordinates.cpp
+/home/danielpiflaks/CLionProjects/ex3/src/BoardCoordinates.cpp
 BoardCoordinates.h
-/home/danielpiflaks/CLionProjects/ex3/BoardCoordinates.h
+/home/danielpiflaks/CLionProjects/ex3/src/BoardCoordinates.h
 
-/home/danielpiflaks/CLionProjects/ex3/BoardCoordinates.h
+/home/danielpiflaks/CLionProjects/ex3/src/BoardCoordinates.h
 iostream
 -
 
-/home/danielpiflaks/CLionProjects/ex3/Game.cpp
+/home/danielpiflaks/CLionProjects/ex3/src/Game.cpp
 Game.h
-/home/danielpiflaks/CLionProjects/ex3/Game.h
+/home/danielpiflaks/CLionProjects/ex3/src/Game.h
 
-/home/danielpiflaks/CLionProjects/ex3/Game.h
+/home/danielpiflaks/CLionProjects/ex3/src/Game.h
 iostream
 -
 list
@@ -38,17 +50,17 @@ list
 vector
 -
 Player.h
-/home/danielpiflaks/CLionProjects/ex3/Player.h
+/home/danielpiflaks/CLionProjects/ex3/src/Player.h
 GameParameters.h
-/home/danielpiflaks/CLionProjects/ex3/GameParameters.h
+/home/danielpiflaks/CLionProjects/ex3/src/GameParameters.h
 BoardCoordinates.h
-/home/danielpiflaks/CLionProjects/ex3/BoardCoordinates.h
+/home/danielpiflaks/CLionProjects/ex3/src/BoardCoordinates.h
 
-/home/danielpiflaks/CLionProjects/ex3/GameLogic.cpp
+/home/danielpiflaks/CLionProjects/ex3/src/GameLogic.cpp
 GameLogic.h
-/home/danielpiflaks/CLionProjects/ex3/GameLogic.h
+/home/danielpiflaks/CLionProjects/ex3/src/GameLogic.h
 
-/home/danielpiflaks/CLionProjects/ex3/GameLogic.h
+/home/danielpiflaks/CLionProjects/ex3/src/GameLogic.h
 iostream
 -
 vector
@@ -56,71 +68,85 @@ vector
 map
 -
 Board.h
-/home/danielpiflaks/CLionProjects/ex3/Board.h
+/home/danielpiflaks/CLionProjects/ex3/src/Board.h
 
-/home/danielpiflaks/CLionProjects/ex3/GameParameters.cpp
+/home/danielpiflaks/CLionProjects/ex3/src/GameParameters.cpp
 Board.h
-/home/danielpiflaks/CLionProjects/ex3/Board.h
+/home/danielpiflaks/CLionProjects/ex3/src/Board.h
 Player.h
-/home/danielpiflaks/CLionProjects/ex3/Player.h
+/home/danielpiflaks/CLionProjects/ex3/src/Player.h
 GameParameters.h
-/home/danielpiflaks/CLionProjects/ex3/GameParameters.h
+/home/danielpiflaks/CLionProjects/ex3/src/GameParameters.h
 HumanPlayer.h
-/home/danielpiflaks/CLionProjects/ex3/HumanPlayer.h
+/home/danielpiflaks/CLionProjects/ex3/src/HumanPlayer.h
 StandartGameLogic.h
-/home/danielpiflaks/CLionProjects/ex3/StandartGameLogic.h
+/home/danielpiflaks/CLionProjects/ex3/src/StandartGameLogic.h
+MiniMaxSimulator.h
+/home/danielpiflaks/CLionProjects/ex3/src/MiniMaxSimulator.h
+AIPlayer.h
+/home/danielpiflaks/CLionProjects/ex3/src/AIPlayer.h
 
-/home/danielpiflaks/CLionProjects/ex3/GameParameters.h
+/home/danielpiflaks/CLionProjects/ex3/src/GameParameters.h
 Board.h
-/home/danielpiflaks/CLionProjects/ex3/Board.h
+/home/danielpiflaks/CLionProjects/ex3/src/Board.h
 Player.h
-/home/danielpiflaks/CLionProjects/ex3/Player.h
+/home/danielpiflaks/CLionProjects/ex3/src/Player.h
 GameLogic.h
-/home/danielpiflaks/CLionProjects/ex3/GameLogic.h
+/home/danielpiflaks/CLionProjects/ex3/src/GameLogic.h
 
-/home/danielpiflaks/CLionProjects/ex3/HumanPlayer.cpp
+/home/danielpiflaks/CLionProjects/ex3/src/HumanPlayer.cpp
 algorithm
 -
 limits
 -
 Board.h
-/home/danielpiflaks/CLionProjects/ex3/Board.h
+/home/danielpiflaks/CLionProjects/ex3/src/Board.h
 Player.h
-/home/danielpiflaks/CLionProjects/ex3/Player.h
+/home/danielpiflaks/CLionProjects/ex3/src/Player.h
 HumanPlayer.h
-/home/danielpiflaks/CLionProjects/ex3/HumanPlayer.h
+/home/danielpiflaks/CLionProjects/ex3/src/HumanPlayer.h
 
-/home/danielpiflaks/CLionProjects/ex3/HumanPlayer.h
+/home/danielpiflaks/CLionProjects/ex3/src/HumanPlayer.h
 Player.h
-/home/danielpiflaks/CLionProjects/ex3/Player.h
+/home/danielpiflaks/CLionProjects/ex3/src/Player.h
 
-/home/danielpiflaks/CLionProjects/ex3/Player.cpp
+/home/danielpiflaks/CLionProjects/ex3/src/MiniMaxSimulator.cpp
+MiniMaxSimulator.h
+/home/danielpiflaks/CLionProjects/ex3/src/MiniMaxSimulator.h
+
+/home/danielpiflaks/CLionProjects/ex3/src/MiniMaxSimulator.h
 Player.h
-/home/danielpiflaks/CLionProjects/ex3/Player.h
+/home/danielpiflaks/CLionProjects/ex3/src/Player.h
 
-/home/danielpiflaks/CLionProjects/ex3/Player.h
+/home/danielpiflaks/CLionProjects/ex3/src/Player.cpp
+Player.h
+/home/danielpiflaks/CLionProjects/ex3/src/Player.h
+
+/home/danielpiflaks/CLionProjects/ex3/src/Player.h
 iostream
 -
 algorithm
 -
 Board.h
-/home/danielpiflaks/CLionProjects/ex3/Board.h
+/home/danielpiflaks/CLionProjects/ex3/src/Board.h
 GameLogic.h
-/home/danielpiflaks/CLionProjects/ex3/GameLogic.h
+/home/danielpiflaks/CLionProjects/ex3/src/GameLogic.h
 
-/home/danielpiflaks/CLionProjects/ex3/StandartGameLogic.cpp
+/home/danielpiflaks/CLionProjects/ex3/src/StandartGameLogic.cpp
 StandartGameLogic.h
-/home/danielpiflaks/CLionProjects/ex3/StandartGameLogic.h
+/home/danielpiflaks/CLionProjects/ex3/src/StandartGameLogic.h
 
-/home/danielpiflaks/CLionProjects/ex3/StandartGameLogic.h
+/home/danielpiflaks/CLionProjects/ex3/src/StandartGameLogic.h
 algorithm
 -
 GameLogic.h
-/home/danielpiflaks/CLionProjects/ex3/GameLogic.h
+/home/danielpiflaks/CLionProjects/ex3/src/GameLogic.h
 
-/home/danielpiflaks/CLionProjects/ex3/main.cpp
+/home/danielpiflaks/CLionProjects/ex3/src/main.cpp
+limits
+-
 GameParameters.h
-/home/danielpiflaks/CLionProjects/ex3/GameParameters.h
+/home/danielpiflaks/CLionProjects/ex3/src/GameParameters.h
 Game.h
-/home/danielpiflaks/CLionProjects/ex3/Game.h
+/home/danielpiflaks/CLionProjects/ex3/src/Game.h
 
